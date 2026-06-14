@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: SLEMP
+description: Simple Linux Engine-X Monitoring Platform
+google_analytics:
+show_downloads: false
