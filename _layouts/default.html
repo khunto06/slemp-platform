@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'id-ID' }}">
+<head>
+  <meta charset="UTF-8">
+  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020617">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <span>SLEMP</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#features">Fitur</a>
+        <a href="#install">Install</a>
+        <a href="#stack">Stack</a>
+        <a href="#screenshot">Screenshot</a>
+        <a href="#demo" class="nav-button">Demo</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <span class="badge">Linux • Nginx • MariaDB • PHP-FPM</span>
+        <h1>{{ page.title | default: site.title }}</h1>
+        <p>{{ page.description | default: site.description }}</p>
+
+        <div class="hero-actions">
+          <a href="#install" class="primary-btn">Mulai Install</a>
+          <a href="#features" class="secondary-btn">Lihat Fitur</a>
+        </div>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span></span><span></span><span></span>
+        </div>
+        <pre><code>$ curl -fsSL https://domain-kamu.com/slemp.sh | bash
+
+● SLEMP Installer
+  OS      : Debian / Ubuntu / AlmaLinux
+  Web     : Nginx
+  Database: MariaDB
+  PHP     : PHP-FPM
+  Status  : Ready</code></pre>
+
+        <div class="stats-row">
+          <div class="stat"><strong>Fast</strong><span>Lightweight stack</span></div>
+          <div class="stat"><strong>Secure</strong><span>Firewall ready</span></div>
+          <div class="stat"><strong>Modern</strong><span>Professional UI</span></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main-content" role="main">
+    {{ content }}
+
+    {% include disqus.html %}
+
+    <footer class="site-footer custom-footer">
+      <strong>SLEMP</strong> — Simple Linux Engine-X Monitoring Platform<br>
+      © <span id="year"></span> Darmawan Kunto. W • Powered by GitHub Pages.
+    </footer>
+  </main>
+
+  <script src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+</body>
+</html>
 
