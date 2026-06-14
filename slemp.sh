@@ -105,7 +105,7 @@ cat > /var/www/slemp/index.html <<EOF
 </head>
 <body>
   <div class="card">
-    <h1>SLEMP-PLATFORM</h1>
+    <h1>SLEMP</h1>
     <p>Simple Linux Engine-X Monitoring Platform</p>
     <div class="status">Status: Running Successfully</div>
     <p>Installed by Darmawan Kunto. W</p>
