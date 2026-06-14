@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-APP_NAME="SLEMP-PLATFORM"
+APP_NAME="SLEMP"
 AUTHOR="Darmawan Kunto. W"
 PORT="12345"
 
